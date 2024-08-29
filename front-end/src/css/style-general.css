@@ -1,0 +1,94 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, var(--body-background-gradient-1), var(--body-background-gradient-2));
+}
+
+.menu-sidebar {
+    width: 3.5vw;
+    height: 100%;
+    background-color: var(--dark-green);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-sidebar.expandir {
+    width: 300px;
+
+}
+
+.btn-expandir {
+    width: 100%;
+    padding: 15px;
+}
+
+.btn-expandir>i {
+    color: var(--white-bread) !important;
+    font-size: 30px;
+}
+
+ul {
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li.item-menu {
+    transition: .2s;
+}
+
+ul li.ativo {
+    background-color: var(--sidebar-dark-green-active);
+}
+
+ul li.item-menu:hover {
+    background-color: var(--sidebar-dark-green-active);
+}
+
+ul li.item-menu a {
+    color: var(--white-bread);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: .2s;
+}
+
+nav.menu-sidebar.expandir .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 25px;
+}
+
+:root {
+    --body-background-gradient-1: #273028;
+    --body-background-gradient-2: #cbe2c9;
+    --white-bread: #F2F1EB;
+    --dark-green: #1a241c;
+    --sidebar-dark-green-active: #29362c;
+}
