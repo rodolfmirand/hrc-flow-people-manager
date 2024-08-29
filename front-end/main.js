@@ -4,12 +4,13 @@ var mainWindow = null;
 
 async function createWindow() {
     mainWindow = new BrowserWindow({
-        width: 1920,
-        height: 1000
+        maximizable: true
     });
 
     await mainWindow.loadFile('src/pages/main.html');
+    mainWindow.maximize();
     Menu.setApplicationMenu(null);  
+    
 }
 
 app.whenReady().then(createWindow);
