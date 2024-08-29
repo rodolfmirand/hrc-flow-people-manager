@@ -25,33 +25,14 @@ public class Van {
     @Column(name = "plate", nullable = false, unique = true)
     private String plate;
 
-    @Column(name = "driver")
-    private String driver;
+    @Column(name = "model")
+    private String model;
 
-    @Column(name = "date")
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    private LocalDate date;
-
-    @Column(name = "time")
-    @JsonFormat(pattern = "HH:mm:ss")
-    private LocalTime time;
-
-    @OneToMany
-    private List<Passenger> passengers = new ArrayList<>();
-
-    public void addPassenger(Passenger passenger) {
-        passengers.add(passenger);
-    }
-
-    public Van(VanRequest vanRequest){
+    public Van(VanRequest vanRequest) {
         this.plate = vanRequest.getPlate();
-        this.driver = vanRequest.getDriver();
-        this.date = vanRequest.getDate();
-        this.time = vanRequest.getTime();
-        this.passengers = null;
+        this.model = vanRequest.getModel();
     }
 
     public Van() {
-
     }
 }
