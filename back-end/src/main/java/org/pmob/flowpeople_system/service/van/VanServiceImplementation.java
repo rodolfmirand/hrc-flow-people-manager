@@ -1,7 +1,6 @@
 package org.pmob.flowpeople_system.service.van;
 
 import org.pmob.flowpeople_system.dto.request.VanRequest;
-import org.pmob.flowpeople_system.dto.request.VanUpdateRequest;
 import org.pmob.flowpeople_system.dto.response.VanResponse;
 import org.pmob.flowpeople_system.model.Van;
 import org.pmob.flowpeople_system.repository.VanRepository;
@@ -10,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.UUID;
 
 @Service
 public class VanServiceImplementation implements VanService {
@@ -23,39 +21,15 @@ public class VanServiceImplementation implements VanService {
 
     @Override
     public boolean register(VanRequest vanRequest) {
+        if (vanRepository.findByPlate(vanRequest.getPlate()).isPresent()) return false;
+
         Van van = vanMapper.toVan(vanRequest);
-        if (van != null) {
-            vanRepository.save(van);
-            return true;
-        }
-        return false;
+        vanRepository.save(van);
+        return true;
     }
 
     @Override
     public List<VanResponse> findAll() {
         return vanMapper.toListVanResponse(vanRepository.findAll());
-    }
-
-    @Override
-    public boolean update(VanUpdateRequest vanUpdateRequest) {
-        Van van = vanRepository.findById(vanUpdateRequest.getId()).orElse(null);
-        if (van != null) {
-            van = vanMapper.toVan(vanUpdateRequest.getVanRequest());
-            vanRepository.save(van);
-            return true;
-        }
-        return false;
-    }
-
-    @Override
-    public boolean delete(UUID id) {
-        Van van = vanRepository.findById(id).orElse(null);
-        if (van != null) {
-            van.setPassengers(null);
-            vanRepository.save(van);
-            vanRepository.delete(van);
-            return true;
-        }
-        return false;
     }
 }
