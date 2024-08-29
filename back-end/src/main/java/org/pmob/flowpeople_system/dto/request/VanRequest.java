@@ -10,10 +10,6 @@ public class VanRequest {
 
     private String plate;
 
-    private String driver;
-
-    private LocalDate date;
-
-    private LocalTime time;
+    private String model;
 
 }
