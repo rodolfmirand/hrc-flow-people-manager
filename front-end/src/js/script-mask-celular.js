@@ -11,12 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
             value = value.slice(0, 11); // Limita o tamanho a 11 caracteres
         }
 
-        if (value.length > 6) {
-            value = value.replace(/^(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
-        } else if (value.length > 2) {
-            value = value.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
-        } else {
-            value = value.replace(/^(\d*)/, '($1');
+        // Adiciona os parênteses e o traço conforme o número de dígitos
+        if (value.length > 10) {
+            value = value.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+        } else if (value.length > 6) {
+            value = value.replace(/^(\d{2})(\d{4})(\d{0,4})$/, '($1) $2-$3');
+        } else if (value.length > 1) {
+            value = value.replace(/^(\d{2})(\d{0,4})$/, '($1) $2');
+        } else if (value.length > 0) {
+            value = value.replace(/^(\d{0,2})$/, '($1');
         }
 
         input.value = value;
