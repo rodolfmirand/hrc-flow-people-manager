@@ -21,7 +21,7 @@ public class DriverServiceImplementation implements DriverService {
 
     @Override
     public boolean register(DriverRequest driverRequest) {
-        if (driverRespository.findByCnh(driverRequest.getCnh()).isPresent()) return false;
+        if (driverRespository.findByPhone(driverRequest.getPhone()).isPresent()) return false;
 
         Driver driver = driverMapper.toDriver(driverRequest);
         driverRespository.save(driver);

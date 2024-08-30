@@ -7,7 +7,5 @@ public class DriverRequest {
 
     private String name;
 
-    private String cnh;
-
-    private Character cnhType;
+    private String phone;
 }

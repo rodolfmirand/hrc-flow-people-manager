@@ -12,14 +12,11 @@ public class DriverResponse {
 
     private String name;
 
-    private String cnh;
-
-    private Character cnhType;
+    private String phone;
 
     public DriverResponse(Driver driver) {
         this.id = driver.getId();
         this.name = driver.getName();
-        this.cnh = driver.getCnh();
-        this.cnhType = driver.getCnhType();
+        this.phone = driver.getPhone();
     }
 }

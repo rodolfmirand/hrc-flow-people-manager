@@ -10,5 +10,5 @@ import java.util.UUID;
 @Repository
 public interface DriverRespository extends JpaRepository<Driver, UUID> {
 
-    Optional<Driver> findByCnh(String cnh);
+    Optional<Driver> findByPhone(String phone);
 }

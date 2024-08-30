@@ -19,16 +19,12 @@ public class Driver {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "cnh")
-    private String cnh;
-
-    @Column(name = "cnh_type")
-    private Character cnhType;
+    @Column(name = "phone")
+    private String phone;
 
     public Driver(DriverRequest driverRequest) {
         this.name = driverRequest.getName();
-        this.cnh = driverRequest.getCnh();
-        this.cnhType = driverRequest.getCnhType();
+        this.phone = driverRequest.getPhone();
     }
 
     public Driver() {
