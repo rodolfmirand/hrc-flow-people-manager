@@ -24,42 +24,11 @@ body {
     align-items: center;
 }
 
-.container {
-    width: 50%;
-    height: 60%;
-    background-color: var(--white-bread);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.container-header {
-    width: 100%;
-    height: 10%;
-    background-color: var(--body-background-gradient-1);
-    color: var(--white-bread);
-    display: flex;
-    align-items: center;
-    line-height: 30px;
-}
-
-.container-header h1 {
-    font-family: 'Quicksand', sans-serif;
-}
-
-.container-header-icon {
-    font-size: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.list:hover {
-    cursor: pointer;
-}
-
 .menu-sidebar {
     width: 3.5vw;
     height: 100%;
     background-color: var(--dark-green);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     font-family: 'Quicksand', sans-serif;
 
     position: fixed;
@@ -89,6 +58,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 ul li.item-menu {
@@ -112,6 +82,12 @@ ul li.item-menu a {
     line-height: 40px;
 }
 
+ul li.sair {
+    bottom: 63px;
+    position: absolute;
+    width: 100%;
+}
+
 ul li.item-menu a .txt-link {
     margin-left: 70px;
     transition: .2s;
@@ -125,10 +101,3 @@ ul li.item-menu a .icon>i {
     font-size: 25px;
 }
 
-:root {
-    --body-background-gradient-1: #273028;
-    --body-background-gradient-2: #cbe2c9;
-    --white-bread: #F2F1EB;
-    --dark-green: #1a241c;
-    --sidebar-dark-green-active: #29362c;
-}
