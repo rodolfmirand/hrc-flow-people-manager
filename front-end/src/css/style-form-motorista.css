@@ -15,49 +15,18 @@
 
 .container-header {
     width: 100%;
-    height: 10%;
-    background-color: var(--body-background-gradient-1);
-    color: var(--white-bread);
-    display: flex;
-    align-items: center;
-    line-height: 30px;
+    height: 100px;
 }
 
-.container-header-icon {
-    font-size: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.list:hover {
-    cursor: pointer;
-}
-
-.form-container {
-    width: 100%;
-    height: 100%;
-    font-weight: 700;
-}
 
 .form-container fieldset {
     width: 70%;
     height: 50%;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 2fr;
-    align-items: center;
-    justify-content: center;
-    border: none;
 }
 
-.form-container form {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
 
 .form-container form label {
     font-size: 17px;
@@ -70,13 +39,14 @@
     margin-bottom: 20px;
     height: 40px;
     font-size: 20px;
-    border-radius: 10px;
     width: 175px;
+
+    border-radius: 10px;
     padding-left: 10px;
     border: 2px solid var(--dark-green);
 }
 
-.form-container .nome {
+.form-container .inpt-form {
     width: 300px;
 }
 

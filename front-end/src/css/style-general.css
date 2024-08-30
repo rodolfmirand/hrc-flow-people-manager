@@ -21,7 +21,6 @@ body {
     background: linear-gradient(to bottom right, var(--body-background-gradient-1), var(--body-background-gradient-2));
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .menu-sidebar {
@@ -50,6 +49,10 @@ body {
 .btn-expandir>i {
     color: var(--white-bread) !important;
     font-size: 30px;
+}
+
+.list:hover {
+    cursor: pointer;
 }
 
 ul {

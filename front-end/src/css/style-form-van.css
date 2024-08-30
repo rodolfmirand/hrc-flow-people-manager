@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url('../fonts/quicksand/Quicksand-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+.container {
+    width: 50%;
+    height: 50%;
+}
+
+.form-container fieldset {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+}
+
+.form-container form label {
+    font-size: 17px;
+    display: block;
+    color: var(--dark-green);
+}
+
+.form-container input {
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 2px solid var(--dark-green);
+}
+
+.form-container .inpt-form-placa {
+    width: 150px;
+    text-transform: uppercase;
+}
+
+.form-container .inpt-form-modelo {
+    width: 300px;
+}
+
+.grid-item1{
+    padding-left: 50px;
+}
+
+.grid-item3 {
+    grid-column: span 2;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
