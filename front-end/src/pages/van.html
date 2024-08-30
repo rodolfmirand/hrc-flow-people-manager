@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style-general.css">
     <link rel="stylesheet" href="../css/style-sidebar.css">
-    <link rel="stylesheet" href="../css/style-form-motorista.css">
+    <link rel="stylesheet" href="../css/style-form-van.css">
     <link rel="stylesheet" href="../css/colors.css">
     <link rel="stylesheet" href="../css/style-form-general.css">
 </head>
@@ -32,13 +32,13 @@
                     <span class="txt-link">Agendar</span>
                 </a>
             </li>
-            <li class="item-menu">
+            <li class="item-menu ativo">
                 <a href="van.html">
                     <span class="icon"><i class="bi bi-truck-front"></i></span>
                     <span class="txt-link">Van</span>
                 </a>
             </li>
-            <li class="item-menu ativo">
+            <li class="item-menu">
                 <a href="motorista.html">
                     <span class="icon"><i class="bi bi-person-add"></i></span>
                     <span class="txt-link">Motorista</span>
@@ -68,27 +68,20 @@
     <div class="container">
         <div class="container-header">
             <span class="container-header-icon"><i class="bi bi-plus-circle"></i></span>
-            <h1>Motorista</h1>
+            <h1>Van</h1>
         </div>
         <div class="form-container">
             <form action="">
                 <fieldset>
                     <div class="grid-item1">
-                        <label for="">Nome:</label>
-                        <input class="inpt-form" type="text" name="nome" id="nome">
+                        <label for="">Placa:</label>
+                        <input class="inpt-form-placa" type="text" name="placa" id="placa">
                     </div>
                     <div class="grid-item2">
-                        <label for="">Sobrenome:</label>
-                        <input class="inpt-form" type="text" name="sobrenome" id="sobrenome">
+                        <label for="">Modelo:</label>
+                        <input class="inpt-form-modelo" type="text" name="modelo" id="modelo">
                     </div>
                     <div class="grid-item3">
-                        <div>
-                            <label for="">Contato:</label>
-                            <input type="text" name="contato" id="contato">
-                        </div>
-                        
-                    </div>
-                    <div class="grid-item4">
                         <button class="bttn">Registrar</button>
                         <button class="lixeira"><i class="bi bi-trash-fill"></i></button>
                     </div>
@@ -99,7 +92,7 @@
 
     <script src="../js/script-sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.js"></script>
-    <script src="../js/script-mask-contato.js"></script>
+    <script src="../js/script-mask-placa.js"></script>
 </body>
 
 </html>
