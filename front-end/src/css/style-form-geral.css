@@ -85,3 +85,10 @@
     color: var(--white-bread);
     font-size: 25px;
 }
+
+
+.grid {
+    width: 300px;
+    height: 80px;
+    margin-bottom: 10px;
+}

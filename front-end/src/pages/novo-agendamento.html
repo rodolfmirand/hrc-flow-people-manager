@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vital Rotas - Registrar Motorista</title>
+    <title>Vital Rotas - Novo Agendamento</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style-geral.css">
-    <link rel="stylesheet" href="../css/style-form-motorista.css">
     <link rel="stylesheet" href="../css/colors.css">
     <link rel="stylesheet" href="../css/style-form-geral.css">
+    <link rel="stylesheet" href="../css/style-form-novo-agendamento.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
                     <span class="txt-link">Início</span>
                 </a>
             </li>
-            <li class="item-menu">
+            <li class="item-menu ativo">
                 <a href="novo-agendamento.html">
                     <span class="icon"><i class="bi bi-calendar-plus-fill"></i></span>
                     <span class="txt-link">Novo Agendamento</span>
@@ -43,7 +43,7 @@
                     <span class="txt-link">Van</span>
                 </a>
             </li>
-            <li class="item-menu ativo">
+            <li class="item-menu">
                 <a href="motorista.html">
                     <span class="icon"><i class="bi bi-person-add"></i></span>
                     <span class="txt-link">Motorista</span>
@@ -69,34 +69,15 @@
             </li>
         </ul>
     </nav>
-
     <div class="container">
         <div class="container-header">
             <span class="container-header-icon"><i class="bi bi-plus-circle"></i></span>
-            <h1>Motorista</h1>
+            <h1>Novo Agendamento</h1>
         </div>
         <div class="form-container">
             <form action="">
                 <fieldset>
-                    <div class="grid-item1 grid">
-                        <label for="">Nome:</label>
-                        <input class="inpt-form" type="text" name="nome" id="nome">
-                    </div>
-                    <div class="grid-item2 grid">
-                        <label for="">Sobrenome:</label>
-                        <input class="inpt-form" type="text" name="sobrenome" id="sobrenome">
-                    </div>
-                    <div class="grid-item3 grid">
-                        <div>
-                            <label for="">Contato:</label>
-                            <input class="inpt" type="text" name="contato" id="contato">
-                        </div>
-                        
-                    </div>
-                    <div class="grid-item4">
-                        <button class="bttn">Registrar</button>
-                        <button class="lixeira" onclick="limparCampos()"><i class="bi bi-trash-fill"></i></button>
-                    </div>
+                    
                 </fieldset>
             </form>
         </div>
@@ -104,7 +85,6 @@
 
     <script src="../js/script-sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.js"></script>
-    <script src="../js/script-mask-celular.js"></script>
     <script src="../js/script-geral.js"></script>
 </body>
 

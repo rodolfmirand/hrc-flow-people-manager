@@ -11,34 +11,27 @@
 }
 
 .form-container form label {
-    width: 100px;
     font-size: 17px;
     display: block;
     color: var(--dark-green);
+    padding-bottom: 5px;
 }
 
 .form-container input {
+    margin-bottom: 20px;
     height: 40px;
     font-size: 20px;
+
     border-radius: 10px;
     padding-left: 10px;
     border: 2px solid var(--dark-green);
 }
 
-.inpt-form-placa {
-    width: 150px;
-    text-transform: uppercase;
-}
-
-.inpt-form-modelo {
+.form-container .inpt-form {
     width: 300px;
 }
 
-.inpt-form-data {
-    width: 160px;
-}
-
-.grid-item5 {
+.grid-item3 {
     grid-column: span 2;
     padding-top: 60px;
     display: flex;
@@ -48,16 +41,9 @@
 
 .selecao {
     height: 40px;
+    width: 250px;
     font-size: 20px;
     border-radius: 10px;
     padding-left: 10px;
     border: 2px solid var(--dark-green);
-}
-
-.motorista {
-    width: 250px;
-}
-
-.horario {
-    width: 120px;
 }
