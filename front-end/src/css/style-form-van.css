@@ -38,12 +38,16 @@
     width: 160px;
 }
 
-.grid-item5 {
+.item-bttn {
     grid-column: span 2;
     padding-top: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.item {
+    margin-bottom: 20px;
 }
 
 .selecao {

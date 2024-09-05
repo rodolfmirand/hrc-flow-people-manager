@@ -1,107 +1,212 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vital Rotas - Novo Agendamento</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style-geral.css">
-    <link rel="stylesheet" href="../css/colors.css">
-    <link rel="stylesheet" href="../css/style-form-geral.css">
-    <link rel="stylesheet" href="../css/style-form-novo-agendamento.css">
-</head>
-
-<body>
-    <nav class="menu-sidebar">
-        <div class="btn-expandir">
-            <i class="bi bi-list list" id="btn-exp"></i>
-        </div>
-
-        <ul>
-            <li class="item-menu">
-                <a href="main.html">
-                    <span class="icon"><i class="bi bi-house"></i></i></span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vital Rotas - Novo Agendamento</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style-geral.css">
+        <link rel="stylesheet" href="../css/colors.css">
+        <link rel="stylesheet" href="../css/style-form-geral.css">
+        <link rel="stylesheet" href="../css/style-form-novo-agendamento.css">
+    </head>
+    <body>
+        <nav class="menu-sidebar">
+            <div class="btn-expandir">
+                <i class="bi bi-list list" id="btn-exp"></i>
+            </div>
+            <ul>
+                <li class="item-menu">
+                    <a href="main.html">
+                        <span class="icon">
+                            <i class="bi bi-house"></i>
+                        </i>
+                    </span>
                     <span class="txt-link">Início</span>
                 </a>
             </li>
             <li class="item-menu ativo">
                 <a href="novo-agendamento.html">
-                    <span class="icon"><i class="bi bi-calendar-plus-fill"></i></span>
+                    <span class="icon">
+                        <i class="bi bi-calendar-plus-fill"></i>
+                    </span>
                     <span class="txt-link">Novo Agendamento</span>
                 </a>
             </li>
             <li class="item-menu">
                 <a href="#">
-                    <span class="icon"><i class="bi bi-calendar3"></i></span>
+                    <span class="icon">
+                        <i class="bi bi-calendar3"></i>
+                    </span>
                     <span class="txt-link">Agenda</span>
                 </a>
             </li>
             <li class="item-menu">
                 <a href="van.html">
-                    <span class="icon"><i class="bi bi-truck-front"></i></span>
+                    <span class="icon">
+                        <i class="bi bi-truck-front"></i>
+                    </span>
                     <span class="txt-link">Van</span>
                 </a>
             </li>
             <li class="item-menu">
                 <a href="motorista.html">
-                    <span class="icon"><i class="bi bi-person-add"></i></span>
+                    <span class="icon">
+                        <i class="bi bi-person-add"></i>
+                    </span>
                     <span class="txt-link">Motorista</span>
                 </a>
             </li>
             <li class="item-menu">
                 <a href="#">
-                    <span class="icon"><i class="bi bi-book"></i></i></i></span>
-                    <span class="txt-link">Histórico</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><i class="bi bi-gear"></i></i></span>
-                    <span class="txt-link">Configuração</span>
-                </a>
-            </li>
-            <li class="item-menu sair">
-                <a href="#">
-                    <span class="icon"><i class="bi bi-box-arrow-left"></i></span>
-                    <span class="txt-link">Sair</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="container-header">
-            <span class="container-header-icon"><i class="bi bi-plus-circle"></i></span>
-            <h1>Novo Agendamento</h1>
-        </div>
-        <div class="form-container">
-            <form action="">
-                <fieldset>
-                    <div class="grid-item1 grid">
-                        <label for="">Nome:</label>
-                        <input class="inpt-form" type="text" name="nome" id="nome">
-                    </div>
-                    <div class="grid-item2 grid">
-                        <label for="">Endereço:</label>
-                        <div class="container-endereco">
-                            <input class="inpt-form-rua" type="text" name="rua" id="rua" placeholder="Rua">
-                            <input class="inpt-form-numero" type="text" name="numero" id="numero" placeholder="Número">
-                            <input class="inpt-form-bairro" type="text" name="bairro" id="bairro" placeholder="Bairro">
-                            <input class="inpt-form-cidade" type="text" name="cidade" id="cidade" placeholder="Cidade">
+                    <span class="icon">
+                        <i class="bi bi-book"></i>
+                    </i>
+                </i>
+            </span>
+            <span class="txt-link">Histórico</span>
+        </a>
+    </li>
+    <li class="item-menu">
+        <a href="#">
+            <span class="icon">
+                <i class="bi bi-gear"></i>
+            </i>
+        </span>
+        <span class="txt-link">Configuração</span>
+    </a>
+</li>
+<li class="item-menu sair">
+    <a href="#">
+        <span class="icon">
+            <i class="bi bi-box-arrow-left"></i>
+        </span>
+        <span class="txt-link">Sair</span>
+    </a>
+</li>
+</ul>
+</nav>
+<div class="container">
+    <div class="container-header">
+        <span class="container-header-icon">
+            <i class="bi bi-plus-circle"></i>
+        </span>
+        <h1>Novo Agendamento</h1>
+    </div>
+    <div class="form-container">
+        <form action="">
+            <fieldset>
+                <div class="titulo">
+                    <h2>Dados Pessoais</h2>
+                </div>
+                <div class="linha"></div>
+                <div class="item">
+                    <label for="">Nome:</label>
+                    <input
+                        class="inpt-form"
+                        type="text"
+                        name="nome"
+                        id="nome"
+                    >
+                </div>
+                <div class="item">
+                    <label for="">Sobrenome:</label>
+                    <input
+                        class="inpt-form"
+                        type="text"
+                        name="sobrenome"
+                        id="sobrenome"
+                    >
+                </div>
+                <div class="item">
+                    <label for="">Documento:</label>
+                    <input
+                        class="inpt-form"
+                        type="text"
+                        name="documento"
+                        id="documento"
+                    >
+                </div>
+                <div class="item">
+                    <label for="">Especialidade:</label>
+                    <input
+                        class="inpt-form"
+                        type="text"
+                        name="especialidade"
+                        id="especialidade"
+                    >
+                </div>
+                <div class="item item-contato">
+                    <label for="">Contato:</label>
+                    <input
+                        class="inpt-form"
+                        type="text"
+                        name="contato"
+                        id="contato"
+                    >
+                </div>
+                <div class="titulo">
+                    <h2>Endereço</h2>
+                </div>
+                <div class="linha"></div>
+                <div class="item">
+                    <label class="lb-endereco" for="">Rua:</label>
+                    <input
+                        class="inpt-form-rua"
+                        type="text"
+                        name="rua"
+                        id="rua"
+                        placeholder="Rua"
+                    >
+                </div>
+                <div class="item">
+                    <label class="lb-endereco" for="">Número:</label>
+                    <input
+                        class="inpt-form-rua"
+                        type="text"
+                        name="numero"
+                        id="numero"
+                        placeholder="Número"
+                    >
+                </div>
+                <div class="item">
+                    <label class="lb-endereco" for="">Bairro:</label>
+                    <input
+                        class="inpt-form-rua"
+                        type="text"
+                        name="bairro"
+                        id="bairro"
+                        placeholder="Bairro"
+                    >
+                </div>
+                <div class="item">
+                    <div class="cidade">
+                        <div>
+                            <label class="lb-endereco" for="">Cidade:</label>
+                            <input
+                                class="inpt-form-rua"
+                                type="text"
+                                name="cidade"
+                                id="cidade"
+                                placeholder="Cidade"
+                            >
+                        </div>
+                        <div>
+                            <label class="lb-endereco" for="">UF:</label>
+                            <select class="selecao" name="uf" id="uf">
+                                <option value="1">MG</option>
+                                <option value="2">SP</option>
+                                <option value="3">RJ</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="grid-item3 grid">
-                        <label for="">Documento:</label>
-                        <input class="inpt-form" type="text" name="documento" id="documento" >
-                    </div>
-                </fieldset>
-            </form>
-        </div>
+                </div>
+            </fieldset>
+        </form>
     </div>
-
-    <script src="../js/script-sidebar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.js"></script>
-    <script src="../js/script-geral.js"></script>
+</div>
+<script src="../js/script-sidebar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.js"></script>
+<script src="../js/script-geral.js"></script>
 </body>
-
 </html>
