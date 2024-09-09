@@ -1,3 +1,7 @@
+body {
+    height: 200vh;
+}
+
 .container {
     width: 50%;
     height: 80%;
@@ -53,17 +57,58 @@
 }
 
 .cidade input {
-    width: 200px;
+    width: 240px;
 }
 
-.selecao {
+.estados {
     height: 40px;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 10px;
     padding-left: 10px;
     border: 2px solid var(--dark-green);
 }
 
-.item-contato {
+.contato {
     grid-column: span 2;
+}
+
+.rua-numero {
+    display: flex;
+    grid-column: span 2;
+    justify-content: space-between;
+}
+
+.rua input {
+    width: 520px;
+}
+
+.numero input {
+    width: 100px;
+}
+
+.documento input {
+    width: 230px;
+}
+
+.documento select {
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border: 2px solid var(--dark-green);
+}
+
+.embarque {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 2;
+}
+
+.embarque .horario-embarque {
+    width: 200px;
+}
+
+.embarque .local-embarque {
+    width: 410px;
 }

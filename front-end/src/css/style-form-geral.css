@@ -2,6 +2,7 @@
     background-color: var(--white-bread);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     font-family: 'Quicksand';
+    margin-top: 50px;
 }
 
 .container-header {
@@ -85,9 +86,3 @@
     font-size: 25px;
 }
 
-
-.grid {
-    width: 300px;
-    height: 80px;
-    margin-bottom: 10px;
-}
