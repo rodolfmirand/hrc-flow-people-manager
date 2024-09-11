@@ -1,0 +1,115 @@
+.container {
+    width: 80%;
+    height: 90%;
+}
+
+.container-calendario {
+    height: 90%;
+}
+
+.nome-dias {
+    height: 10%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px 20px 10px 20px;
+    gap: 10px;
+}
+
+.nome-dia {
+    border: 1px solid #ccc;
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-size: 20px;
+    color: var(--white-bread);
+}
+
+.dias {
+    height: 87%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 0px 20px 20px 20px;
+    background-color: #f0f0f0;
+}
+
+.dia {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dia i {
+    font-size: 40px;
+    color: var(--dark-green);
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.dia i:hover {
+    color: var(--green);
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-header {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.container-mes {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.seta-mes {
+    font-size: 30px;
+}
+
+.nome-mes {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seta {
+    background-color: var(--green);
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 0 5px 0px #131f12;
+}
+
+.seta:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0px rgb(73, 73, 73);
+}
+
+.seta:hover {
+    background-color: #1d301e;
+}
+
+.seta i {
+    cursor: pointer;
+    color: var(--white-bread);
+}

@@ -3,10 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vital Rotas - Início</title>
+        <title>Vital Rotas - Agenda</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/style-geral.css">
         <link rel="stylesheet" href="../css/colors.css">
+        <link rel="stylesheet" href="../css/style-form-geral.css">
+        <link rel="stylesheet" href="../css/style-form-agenda.css">
     </head>
     <body>
         <nav class="menu-sidebar">
@@ -14,7 +16,7 @@
                 <i class="bi bi-list list" id="btn-exp"></i>
             </div>
             <ul>
-                <li class="item-menu ativo">
+                <li class="item-menu">
                     <a href="main.html">
                         <span class="icon">
                             <i class="bi bi-house"></i>
@@ -22,7 +24,7 @@
                         <span class="txt-link">Início</span>
                     </a>
                 </li>
-                <li class="item-menu">
+                <li class="item-menu ativo">
                     <a href="agenda.html">
                         <span class="icon">
                             <i class="bi bi-calendar3"></i>
@@ -72,7 +74,45 @@
                 </li>
             </ul>
         </nav>
+        <div class="container">
+            <div class="container-header">
+                <div class="text-header">
+                    <span class="container-header-icon">
+                        <i class="bi bi-plus-circle"></i>
+                    </span>
+                    <h1>Agenda</h1>
+                </div>
+                <div class="container-mes">
+                    <div class="seta" id="bttn-anterior">
+                        <span class="seta-mes">
+                            <i class="bi bi-arrow-left-circle"></i>
+                        </span>
+                    </div>
+                    <div class="nome-mes">
+                        <h2 id="nome-mes">Setembro</h2>
+                    </div>
+                    <div class="seta" id="bttn-proximo">
+                        <span class="seta-mes">
+                            <i class="bi bi-arrow-right-circle"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-calendario">
+                <div class="nome-dias">
+                    <div class="nome-dia">Domingo</div>
+                    <div class="nome-dia">Segunda</div>
+                    <div class="nome-dia">Terça</div>
+                    <div class="nome-dia">Quarta</div>
+                    <div class="nome-dia">Quinta</div>
+                    <div class="nome-dia">Sexta</div>
+                    <div class="nome-dia">Sábado</div>
+                </div>
+                <div class="dias" id="dias-calendario"></div>
+            </div>
+        </div>
         <script src="../js/script-sidebar.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.js"></script>
+        <script src="../js/script-agenda.js"></script>
     </body>
 </html>

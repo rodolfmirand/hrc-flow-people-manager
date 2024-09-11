@@ -41,7 +41,7 @@
     justify-content: center;
 }
 
-.form-container .bttn {
+.bttn {
     width: 200px;
     height: 40px;
     font-size: 20px;
@@ -51,20 +51,21 @@
     color: var(--white-bread);
     border: none;
     cursor: pointer;
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
     box-shadow: 0 5px 0px #131f12;
+
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-.form-container .bttn:active {
+.bttn:active {
     transform: translateY(4px);
     box-shadow: 0 2px 0px rgb(73, 73, 73);
 }
 
-.form-container .bttn:hover {
+.bttn:hover {
     background-color: #1d301e;
 }
 
-.form-container .lixeira {
+.lixeira {
     margin-left: 30px;
     background-color: var(--red);
     border: none;
@@ -76,12 +77,12 @@
     cursor: pointer;
 }
 
-.form-container .lixeira:active {
+.lixeira:active {
     transform: translateY(4px);
     box-shadow: 0 2px 0px rgb(73, 73, 73);
 }
 
-.form-container .lixeira i {
+.lixeira i {
     color: var(--white-bread);
     font-size: 25px;
 }

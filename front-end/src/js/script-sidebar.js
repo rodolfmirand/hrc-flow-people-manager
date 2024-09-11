@@ -1,13 +1,13 @@
 var menuItem = document.querySelectorAll('.item-menu')
 
-function selectLink(){
-    menuItem.forEach((item) => 
+function selectLink() {
+    menuItem.forEach((item) =>
         item.classList.remove('ativo')
     )
     this.classList.add('ativo')
 }
 
-menuItem.forEach((item) => 
+menuItem.forEach((item) =>
     item.addEventListener('click', selectLink)
 )
 
@@ -15,6 +15,6 @@ menuItem.forEach((item) =>
 var btnExp = document.querySelector('#btn-exp')
 var menuSide = document.querySelector('.menu-sidebar')
 
-btnExp.addEventListener('click', function(){
+btnExp.addEventListener('click', function () {
     menuSide.classList.toggle('expandir')
 })
