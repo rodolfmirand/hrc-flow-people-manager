@@ -10,4 +10,6 @@ public interface DriverService {
     boolean register(DriverRequest driverRequest);
 
     List<DriverResponse> findAll();
+
+    DriverResponse findIdByPhone(String phone);
 }

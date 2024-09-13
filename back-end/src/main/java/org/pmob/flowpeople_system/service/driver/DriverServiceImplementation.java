@@ -32,4 +32,12 @@ public class DriverServiceImplementation implements DriverService {
     public List<DriverResponse> findAll() {
         return driverMapper.toDriverList(driverRespository.findAll());
     }
+
+    @Override
+    public DriverResponse findIdByPhone(String phone) {
+        Driver driver = driverRespository.findByPhone(phone).orElse(null);
+        if(driver == null) return null;
+
+        return driverMapper.toDriverResponse(driver);
+    }
 }
