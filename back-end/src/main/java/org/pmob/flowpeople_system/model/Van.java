@@ -19,13 +19,13 @@ public class Van {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name = "id")
+    @Column(name = "id", nullable = false, unique = true)
     private UUID id;
 
     @Column(name = "plate", nullable = false, unique = true)
     private String plate;
 
-    @Column(name = "model")
+    @Column(name = "model", nullable = false)
     private String model;
 
     public Van(VanRequest vanRequest) {

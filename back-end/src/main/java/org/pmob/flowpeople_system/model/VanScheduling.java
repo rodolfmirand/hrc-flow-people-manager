@@ -16,7 +16,7 @@ public class VanScheduling {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name = "id")
+    @Column(name = "id", nullable = false, unique = true)
     private UUID id;
 
     @OneToOne

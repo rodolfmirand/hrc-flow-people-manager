@@ -13,13 +13,13 @@ public class Driver {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name = "id")
+    @Column(name = "id", nullable = false, unique = true)
     private UUID id;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "phone")
+    @Column(name = "phone", nullable = false, unique = true)
     private String phone;
 
     public Driver(DriverRequest driverRequest) {
