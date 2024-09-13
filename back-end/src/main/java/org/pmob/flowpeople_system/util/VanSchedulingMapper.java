@@ -28,7 +28,7 @@ public class VanSchedulingMapper {
         Van van = vanRepository.findByPlate(vanSchedulingRequest.getPlateVan()).orElse(null);
         if (van == null) return null;
 
-        Driver driver = driverRespository.findByCnh(vanSchedulingRequest.getCnhDriver()).orElse(null);
+        Driver driver = driverRespository.findByPhone(vanSchedulingRequest.getDriverPhone()).orElse(null);
         if (driver == null) return null;
 
         return new VanScheduling(van, driver, vanSchedulingRequest.getDate(), vanSchedulingRequest.getTime());

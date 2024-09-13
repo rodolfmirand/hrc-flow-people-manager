@@ -22,4 +22,8 @@ public class DriverMapper {
         }
         return driversResponse;
     }
+
+    public DriverResponse toDriverResponse(Driver driver) {
+        return new DriverResponse(driver);
+    }
 }
