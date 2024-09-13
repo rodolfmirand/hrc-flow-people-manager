@@ -14,7 +14,15 @@ public class PassengerResponse {
 
     private String document;
 
-    private String adress;
+    private String street;
+
+    private String number;
+
+    private String neighborhood;
+
+    private String city;
+
+    private String state;
 
     private String phone;
 
@@ -28,7 +36,11 @@ public class PassengerResponse {
         this.id = passenger.getId();
         this.name = passenger.getName();
         this.document = passenger.getDocument();
-        this.adress = passenger.getAddress();
+        this.street = passenger.getStreet();
+        this.number = passenger.getNumber();
+        this.neighborhood = passenger.getNeighborhood();
+        this.city = passenger.getCity();
+        this.state = passenger.getState();
         this.phone = passenger.getPhone();
         this.specialty = passenger.getSpecialty();
         this.local = passenger.getLocal();

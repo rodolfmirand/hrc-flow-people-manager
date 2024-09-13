@@ -8,7 +8,7 @@ import java.time.LocalTime;
 @Getter
 public class VanSchedulingRequest {
 
-    private String cnhDriver;
+    private String driverPhone;
 
     private String plateVan;
 

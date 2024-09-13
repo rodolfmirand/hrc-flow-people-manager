@@ -14,7 +14,17 @@ public class PassengerRequest {
 
     private String document;
 
-    private String adress;
+    private String documentType;
+
+    private String street;
+
+    private String number;
+
+    private String neighrborhood;
+
+    private String city;
+
+    private String state;
 
     private String phone;
 

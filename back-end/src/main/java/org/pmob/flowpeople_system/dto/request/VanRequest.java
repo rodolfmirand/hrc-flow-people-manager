@@ -11,5 +11,4 @@ public class VanRequest {
     private String plate;
 
     private String model;
-
 }
