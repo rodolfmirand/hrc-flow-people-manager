@@ -26,7 +26,16 @@ public class DriverController {
     }
 
     @GetMapping("/find-all")
-    public ResponseEntity<List<DriverResponse>> findAll(){
+    public ResponseEntity<List<DriverResponse>> findAll() {
         return ResponseEntity.ok().body(driverService.findAll());
+    }
+
+    @GetMapping("find-by-phone")
+    public ResponseEntity<?> findByPhone(@RequestParam String phone) {
+        DriverResponse driverResponse = driverService.findIdByPhone(phone);
+        if (driverResponse == null)
+            return ResponseEntity.badRequest().body("Motorista não encontrado.");
+
+        return ResponseEntity.ok().body(driverResponse);
     }
 }
