@@ -48,7 +48,7 @@ selectElement.addEventListener('change', function () {
     }
 });
 
-inputElement.addEventListener('input', function () {
+function mask () {
     const selectedValue = selectElement.value;
     let value = inputElement.value;
 
@@ -60,4 +60,6 @@ inputElement.addEventListener('input', function () {
     } else if (selectedValue === 'cnh') {
         inputElement.value = maskCNH(value);
     }
-});
+};
+
+inputElement.addEventListener('input', mask);
